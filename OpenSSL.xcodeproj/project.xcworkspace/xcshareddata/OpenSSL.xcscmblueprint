@@ -4,15 +4,19 @@
 
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
-    "EEFCF39767E01541D922C36D952EA2E0C2D6756F" : 0,
     "55A7FB660E25DAD7EFF279C9F437500B47348AC7" : 9223372036854775807,
+    "EEFCF39767E01541D922C36D952EA2E0C2D6756F" : 0,
+    "31263E6D757B55053CAC01A14B717D6CB5CC0300" : 9223372036854775807,
+    "8601E67F4FB64BCEBC94AD8912DA48EAE2F25B48" : 9223372036854775807,
     "8C340C33C6D4C828D7EB6178408D5E4A923742E6" : 0,
     "67196C8CF7A0B8E3A8B75714FEE55F97D30A021E" : 0
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "4F66B625-371E-4386-999C-3266622350A0",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
-    "EEFCF39767E01541D922C36D952EA2E0C2D6756F" : "OpenSSLopenssl",
     "55A7FB660E25DAD7EFF279C9F437500B47348AC7" : "openssl-xcode\/openssl\/",
+    "EEFCF39767E01541D922C36D952EA2E0C2D6756F" : "OpenSSLopenssl",
+    "31263E6D757B55053CAC01A14B717D6CB5CC0300" : "openssl-xcode\/zlib\/",
+    "8601E67F4FB64BCEBC94AD8912DA48EAE2F25B48" : "openssl-xcode\/zlib\/zlib\/",
     "8C340C33C6D4C828D7EB6178408D5E4A923742E6" : "openssl-xcode\/",
     "67196C8CF7A0B8E3A8B75714FEE55F97D30A021E" : ""
   },
@@ -20,6 +24,11 @@
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
   "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "OpenSSL.xcodeproj",
   "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/leico\/zlib-xcode",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "31263E6D757B55053CAC01A14B717D6CB5CC0300"
+    },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/openssl\/openssl.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
@@ -29,6 +38,11 @@
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "bitbucket.org:danielctull\/issues.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "67196C8CF7A0B8E3A8B75714FEE55F97D30A021E"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/madler\/zlib",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8601E67F4FB64BCEBC94AD8912DA48EAE2F25B48"
     },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "git:\/\/github.com\/danielctull\/openssl-xcode",

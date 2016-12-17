@@ -6,39 +6,55 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		4A53BCA01E0580E1003BD492 /* libz-1.2.8.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A53BC9F1E0580B5003BD492 /* libz-1.2.8.a */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
-		2438DDE118FA8BB000331C0B /* PBXContainerItemProxy */ = {
+		4A53BC8D1E0572EA003BD492 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2438DD5C18FA877000331C0B /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 2438DDBA18FA880600331C0B;
+			remoteGlobalIDString = 4A53BC7F1E0572A5003BD492;
 			remoteInfo = crypto;
+		};
+		4A53BC9E1E0580B5003BD492 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A53BC9A1E0580B5003BD492 /* z.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4AD0F9491E051A3000440F44;
+			remoteInfo = "z-1.2.8";
+		};
+		4A53BCA11E0580EC003BD492 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A53BC9A1E0580B5003BD492 /* z.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 4AD0F9481E051A3000440F44;
+			remoteInfo = "z-1.2.8";
 		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		244E69F819424EEC00FA7AAD /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
+/* Begin PBXFileReference section */
+		4A53BC801E0572A5003BD492 /* libcrypto.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libcrypto.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A53BC891E0572D9003BD492 /* libssl.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libssl.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A53BC9A1E0580B5003BD492 /* z.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = z.xcodeproj; path = zlib/z.xcodeproj; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4A53BC981E0580A6003BD492 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
-			dstPath = include/openssl;
-			dstSubfolderSpec = 16;
 			files = (
+				4A53BCA01E0580E1003BD492 /* libz-1.2.8.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-/* End PBXCopyFilesBuildPhase section */
-
-/* Begin PBXFileReference section */
-		2438DD9118FA87EE00331C0B /* libssl.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libssl.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		2438DDBB18FA880600331C0B /* libcrypto.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libcrypto.a; sourceTree = BUILT_PRODUCTS_DIR; };
-/* End PBXFileReference section */
+/* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		2421BBBB1A3F076A00E61B19 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2438DDBB18FA880600331C0B /* libcrypto.a */,
-				2438DD9118FA87EE00331C0B /* libssl.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -47,41 +63,61 @@
 			isa = PBXGroup;
 			children = (
 				2421BBBB1A3F076A00E61B19 /* Products */,
+				4A53BC801E0572A5003BD492 /* libcrypto.a */,
+				4A53BC891E0572D9003BD492 /* libssl.a */,
+				4A53BC991E0580B5003BD492 /* Frameworks */,
 			);
+			sourceTree = "<group>";
+		};
+		4A53BC991E0580B5003BD492 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4A53BC9A1E0580B5003BD492 /* z.xcodeproj */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4A53BC9B1E0580B5003BD492 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4A53BC9F1E0580B5003BD492 /* libz-1.2.8.a */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2438DD9018FA87EE00331C0B /* ssl */ = {
+		4A53BC7F1E0572A5003BD492 /* crypto */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2438DDB118FA87EE00331C0B /* Build configuration list for PBXNativeTarget "ssl" */;
+			buildConfigurationList = 4A53BC811E0572A5003BD492 /* Build configuration list for PBXNativeTarget "crypto" */;
 			buildPhases = (
+				4A53BC981E0580A6003BD492 /* Frameworks */,
+				4A53BC841E0572C4003BD492 /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				2438DDE218FA8BB000331C0B /* PBXTargetDependency */,
-			);
-			name = ssl;
-			productName = ssl;
-			productReference = 2438DD9118FA87EE00331C0B /* libssl.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		2438DDBA18FA880600331C0B /* crypto */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 2438DDDB18FA880700331C0B /* Build configuration list for PBXNativeTarget "crypto" */;
-			buildPhases = (
-				2438DDE318FA8BB400331C0B /* ShellScript */,
-				244E69F819424EEC00FA7AAD /* CopyFiles */,
-			);
-			buildRules = (
-			);
-			dependencies = (
+				4A53BCA21E0580EC003BD492 /* PBXTargetDependency */,
 			);
 			name = crypto;
 			productName = crypto;
-			productReference = 2438DDBB18FA880600331C0B /* libcrypto.a */;
+			productReference = 4A53BC801E0572A5003BD492 /* libcrypto.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		4A53BC881E0572D9003BD492 /* ssl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A53BC8A1E0572D9003BD492 /* Build configuration list for PBXNativeTarget "ssl" */;
+			buildPhases = (
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4A53BC8E1E0572EA003BD492 /* PBXTargetDependency */,
+			);
+			name = ssl;
+			productName = ssl;
+			productReference = 4A53BC891E0572D9003BD492 /* libssl.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -92,6 +128,16 @@
 			attributes = {
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Daniel Tull";
+				TargetAttributes = {
+					4A53BC7F1E0572A5003BD492 = {
+						CreatedOnToolsVersion = 8.2;
+						ProvisioningStyle = Automatic;
+					};
+					4A53BC881E0572D9003BD492 = {
+						CreatedOnToolsVersion = 8.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
 			};
 			buildConfigurationList = 2438DD5F18FA877000331C0B /* Build configuration list for PBXProject "OpenSSL" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -103,16 +149,32 @@
 			mainGroup = 2438DD5B18FA877000331C0B;
 			productRefGroup = 2438DD5B18FA877000331C0B;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 4A53BC9B1E0580B5003BD492 /* Products */;
+					ProjectRef = 4A53BC9A1E0580B5003BD492 /* z.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
-				2438DDBA18FA880600331C0B /* crypto */,
-				2438DD9018FA87EE00331C0B /* ssl */,
+				4A53BC7F1E0572A5003BD492 /* crypto */,
+				4A53BC881E0572D9003BD492 /* ssl */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		4A53BC9F1E0580B5003BD492 /* libz-1.2.8.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libz-1.2.8.a";
+			remoteRef = 4A53BC9E1E0580B5003BD492 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXShellScriptBuildPhase section */
-		2438DDE318FA8BB400331C0B /* ShellScript */ = {
+		4A53BC841E0572C4003BD492 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -122,16 +184,21 @@
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = ./build.sh;
+			shellPath = /bin/bash;
+			shellScript = "./build-osx.sh";
 		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		2438DDE218FA8BB000331C0B /* PBXTargetDependency */ = {
+		4A53BC8E1E0572EA003BD492 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2438DDBA18FA880600331C0B /* crypto */;
-			targetProxy = 2438DDE118FA8BB000331C0B /* PBXContainerItemProxy */;
+			target = 4A53BC7F1E0572A5003BD492 /* crypto */;
+			targetProxy = 4A53BC8D1E0572EA003BD492 /* PBXContainerItemProxy */;
+		};
+		4A53BCA21E0580EC003BD492 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "z-1.2.8";
+			targetProxy = 4A53BCA11E0580EC003BD492 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -140,6 +207,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -155,6 +223,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)/$(PROJECT_NAME)/$(EFFECTIVE_PLATFORM_NAME)";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -173,13 +242,16 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/DerivedData/Build/Products/Release/z/usr/local/include\"";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/DerivedData/Build/Products/Release/z\"";
 				MACH_O_TYPE = staticlib;
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				ONLY_ACTIVE_ARCH = YES;
-				OPENSSL_XCODE_CONFIGURE_ARGS = "no-shared zlib";
-				OPENSSL_XCODE_INSTALL_PREFIX = "$(SRCROOT)/build/";
-				SDKROOT = iphoneos;
+				OPENSSL_XCODE_CONFIGURE_ARGS = "no-shared zlib --prefix=$(OPENSSL_XCODE_INSTALL_PREFIX)";
+				OPENSSL_XCODE_INSTALL_PREFIX = "$(CONFIGURATION_BUILD_DIR)";
+				SDKROOT = macosx10.12;
+				SUPPORTED_PLATFORMS = macosx;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
@@ -189,6 +261,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -204,6 +277,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)/$(PROJECT_NAME)/$(EFFECTIVE_PLATFORM_NAME)";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -215,67 +289,86 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/DerivedData/Build/Products/Release/z/usr/local/include\"";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/DerivedData/Build/Products/Release/z\"";
 				MACH_O_TYPE = staticlib;
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				OPENSSL_XCODE_CONFIGURE_ARGS = "no-shared zlib";
-				OPENSSL_XCODE_INSTALL_PREFIX = "$(SRCROOT)/build/";
-				SDKROOT = iphoneos;
+				OPENSSL_XCODE_CONFIGURE_ARGS = "no-shared zlib --prefix=$(OPENSSL_XCODE_INSTALL_PREFIX)";
+				OPENSSL_XCODE_INSTALL_PREFIX = "$(CONFIGURATION_BUILD_DIR)";
+				SDKROOT = macosx10.12;
+				SUPPORTED_PLATFORMS = macosx;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 				VALIDATE_PRODUCT = YES;
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Release;
 		};
-		2438DDB218FA87EE00331C0B /* Debug */ = {
+		4A53BC821E0572A5003BD492 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DSTROOT = /tmp/ssl.dst;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ssl/ssl-Prefix.pch";
-				OTHER_LDFLAGS = "-ObjC";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)/$(PROJECT_NAME)/$(EFFECTIVE_PLATFORM_NAME)";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				EXECUTABLE_PREFIX = lib;
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
+				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
-		2438DDB318FA87EE00331C0B /* Release */ = {
+		4A53BC831E0572A5003BD492 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DSTROOT = /tmp/ssl.dst;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ssl/ssl-Prefix.pch";
-				OTHER_LDFLAGS = "-ObjC";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)/$(PROJECT_NAME)/$(EFFECTIVE_PLATFORM_NAME)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				EXECUTABLE_PREFIX = lib;
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
+				SDKROOT = macosx;
 			};
 			name = Release;
 		};
-		2438DDDC18FA880700331C0B /* Debug */ = {
+		4A53BC8B1E0572D9003BD492 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DSTROOT = /tmp/crypto.dst;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "crypto/crypto-Prefix.pch";
-				OPENSSL_XCODE_CONFIGURE_ARGS = "no-shared zlib --prefix=$(OPENSSL_XCODE_INSTALL_PREFIX)";
-				OPENSSL_XCODE_INSTALL_PREFIX = "$(SRCROOT)/build/$(CONFIGURATION)";
-				OTHER_LDFLAGS = "-ObjC";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CODE_SIGN_IDENTITY = "-";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				EXECUTABLE_PREFIX = lib;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
+				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
-		2438DDDD18FA880700331C0B /* Release */ = {
+		4A53BC8C1E0572D9003BD492 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DSTROOT = /tmp/crypto.dst;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "crypto/crypto-Prefix.pch";
-				OPENSSL_XCODE_CONFIGURE_ARGS = "no-shared zlib --prefix=$(OPENSSL_XCODE_INSTALL_PREFIX)";
-				OPENSSL_XCODE_INSTALL_PREFIX = "$(SRCROOT)/build/$(CONFIGURATION)";
-				OTHER_LDFLAGS = "-ObjC";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				EXECUTABLE_PREFIX = lib;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
+				SDKROOT = macosx;
 			};
 			name = Release;
 		};
@@ -291,23 +384,21 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2438DDB118FA87EE00331C0B /* Build configuration list for PBXNativeTarget "ssl" */ = {
+		4A53BC811E0572A5003BD492 /* Build configuration list for PBXNativeTarget "crypto" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2438DDB218FA87EE00331C0B /* Debug */,
-				2438DDB318FA87EE00331C0B /* Release */,
+				4A53BC821E0572A5003BD492 /* Debug */,
+				4A53BC831E0572A5003BD492 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
-		2438DDDB18FA880700331C0B /* Build configuration list for PBXNativeTarget "crypto" */ = {
+		4A53BC8A1E0572D9003BD492 /* Build configuration list for PBXNativeTarget "ssl" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2438DDDC18FA880700331C0B /* Debug */,
-				2438DDDD18FA880700331C0B /* Release */,
+				4A53BC8B1E0572D9003BD492 /* Debug */,
+				4A53BC8C1E0572D9003BD492 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
