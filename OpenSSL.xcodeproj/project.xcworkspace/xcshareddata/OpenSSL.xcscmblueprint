@@ -1,0 +1,37 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "8C340C33C6D4C828D7EB6178408D5E4A923742E6",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "EEFCF39767E01541D922C36D952EA2E0C2D6756F" : 0,
+    "67196C8CF7A0B8E3A8B75714FEE55F97D30A021E" : 0,
+    "8C340C33C6D4C828D7EB6178408D5E4A923742E6" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "4F66B625-371E-4386-999C-3266622350A0",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "EEFCF39767E01541D922C36D952EA2E0C2D6756F" : "OpenSSLopenssl",
+    "67196C8CF7A0B8E3A8B75714FEE55F97D30A021E" : "",
+    "8C340C33C6D4C828D7EB6178408D5E4A923742E6" : "openssl-xcode\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "OpenSSL",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "OpenSSL.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "bitbucket.org:danielctull\/issues.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "67196C8CF7A0B8E3A8B75714FEE55F97D30A021E"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "git:\/\/github.com\/danielctull\/openssl-xcode",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8C340C33C6D4C828D7EB6178408D5E4A923742E6"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "git:\/\/github.com\/danielctull-forks\/openssl.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "EEFCF39767E01541D922C36D952EA2E0C2D6756F"
+    }
+  ]
+}
