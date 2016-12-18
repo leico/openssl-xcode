@@ -298,7 +298,7 @@
 		2438DD5C18FA877000331C0B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Daniel Tull";
 				TargetAttributes = {
 					4A53BC7F1E0572A5003BD492 = {
@@ -379,7 +379,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -418,11 +417,11 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/DerivedData/Build/Products/Release/z\"";
 				MACH_O_TYPE = staticlib;
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				ONLY_ACTIVE_ARCH = YES;
 				OPENSSL_XCODE_CONFIGURE_ARGS = "no-shared zlib --prefix=$(OPENSSL_XCODE_INSTALL_PREFIX)";
 				OPENSSL_XCODE_INSTALL_PREFIX = "$(BUILD_DIR)/$(CONFIGURATION)/$(PROJECT_NAME)/$(EFFECTIVE_PLATFORM_NAME)";
-				SDKROOT = macosx10.12;
+				SDKROOT = macosx;
 				SUPPORTED_PLATFORMS = macosx;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
@@ -433,7 +432,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -465,10 +463,10 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/DerivedData/Build/Products/Release/z\"";
 				MACH_O_TYPE = staticlib;
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				OPENSSL_XCODE_CONFIGURE_ARGS = "no-shared zlib --prefix=$(OPENSSL_XCODE_INSTALL_PREFIX)";
 				OPENSSL_XCODE_INSTALL_PREFIX = "$(BUILD_DIR)/$(CONFIGURATION)/$(PROJECT_NAME)/$(EFFECTIVE_PLATFORM_NAME)";
-				SDKROOT = macosx10.12;
+				SDKROOT = macosx;
 				SUPPORTED_PLATFORMS = macosx;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 				VALIDATE_PRODUCT = YES;
